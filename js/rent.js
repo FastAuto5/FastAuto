@@ -229,6 +229,4 @@ function buttons(){
   ViewBtn.id='view';
   RentBtn.addEventListener('click', updateStorage);
   showRent.removeEventListener('click',buttons);
-
-
 }
