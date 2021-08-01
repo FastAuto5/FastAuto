@@ -74,7 +74,7 @@ function carInstances(){
   new Car ('Toyota Mirai Navy Blue','2021', 450 ,"img/Toyota Mirai Navy Blue 2021.jpg");
   new Car ('Toyota Camry Red','2018', 450 ,"img/Toyota Camry Red 2018.webp");
   new Car ('Xc90 Volvo Grey','2021', 450 ,"img/Xc90 Volvo Grey 2021.jpg");
-  new Car ('S60 Volvo Sky Blue','2018', 100 ,"img/S60 Volvo Sky Blue 2018.jpeg");
+  new Car ('S60 Volvo Blue Sky','2018', 100 ,"img/S60 Volvo Blue Sky 2018.jpg");
 }
 carInstances();
 
@@ -229,6 +229,4 @@ function buttons(){
   ViewBtn.id='view';
   RentBtn.addEventListener('click', updateStorage);
   showRent.removeEventListener('click',buttons);
-
-
 }
