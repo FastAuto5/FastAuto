@@ -193,7 +193,7 @@ function updateStorage() {
   // console.log(Coffee.drinks.toString());
   // console.log(Item.all);
 
-  let stringArr = JSON.stringify(rent);
+  let stringArr = JSON.stringify(buy);
   // console.log(stringArr);
 
   localStorage.setItem('Buycar', stringArr);
