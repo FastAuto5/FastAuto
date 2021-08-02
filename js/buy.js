@@ -563,7 +563,7 @@ function showChart() {
     const data = {
         labels: models,
         datasets: [{
-            label: 'Most Sold Cars This Year',
+            label: 'Most Seen Cars This Day',
             data: soldArr,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.7)',
