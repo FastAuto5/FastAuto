@@ -1,0 +1,146 @@
+ body{
+    background-color: #FBE6C2;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ img:first-child {
+    width: 10%;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+ nav ul li {
+     display: inline-block;
+    float: left;
+    margin-left: 9%;
+    padding: -10%; 
+    display: inline;
+    float: left;
+    
+} 
+header  {
+margin-top: 0%;
+vertical-align: text-top; 
+background-color: #AC0D0D;
+height: 110px;
+}
+
+  li a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  }
+  ul {
+    padding-left: 9%;
+      margin-top: -5%;
+      position: sticky;
+    top: 0%;
+    margin-bottom: 13%;
+    padding-left: 8%;
+    overflow: hidden;
+    background-position: center;
+    border-right: none; 
+  } 
+  li:hover {
+    background-color: lightcoral;
+    transform: scale(4);
+    border:solid black 25px;
+
+    
+  } 
+
+fieldset{
+width: 80%;
+position: relative;
+margin-left: 10%;
+border-radius: 20%;
+height: 30%;
+margin-top: 5%; 
+}
+main div img {
+    width: 80%;
+position: relative;
+margin-left: 0%;
+border-radius: 20%;
+}
+h2 {
+    margin-top: 8%;
+    text-align: center;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+footer{
+    display:flex ;
+    margin-top: 60%;
+    justify-content: center;
+}
+#BBuy {
+    margin-right: 60%;
+    text-align:left;
+    color: black;
+    background-color: red;
+
+}
+#Buy{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+    color: black;
+    background-color: red;
+    margin-left: 70%;
+    text-align:right;
+    margin-bottom: 20%; 
+}  
+      .carsBoo1{
+        margin-top: 6%;
+        padding: 2%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+        transition: 1s;
+        width: 40%;
+        display: inline block;
+        float: left;
+        border-radius: 15px 50px 30px;
+        background-color: lightpink;
+
+
+    }
+      .carsBoo1:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+      }
+      .Class2 {
+        padding: 25px 16px;
+      }
+
+      .carsBoo{
+        margin-top: 6%;
+        padding: 2%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+        transition: 1s;
+        width: 40%;
+        display: inline block;
+        float: right;
+        border-radius: 15px 50px 30px;
+        background-color: lightpink;
+    }
+      .carsBoo:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+      }
+      .Class2 {
+        padding: 25px 16px;
+      }
+
+.Class2{
+    font-family: 'Lobster', cursive;                    animation: blinker 2s linear infinite;
+      }
+      
+      @keyframes blinker {
+        50% {
+            font-family: 'Oswald', sans-serif;
+        }
+      } 
+
+
+
+
+      
