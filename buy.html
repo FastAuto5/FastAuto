@@ -13,8 +13,8 @@
 <header></header>
 
 <main>
-<div id="video">
-    <video id="videocar" src="video/Car Logo__Racing Reveal After Effects Templates.mp4" width="100%" muted autoplay loop ></video>
+<div id="vid">
+    <video id="vidcar" src="video/Car_Logo__Racing.mp4" width="100%" muted autoplay loop ></video>
 
 </div>
 <div>
@@ -24,22 +24,30 @@
         <fieldset>
                      <label for="model">Make/Model:</label>
                     <select name="model" id="model" >
-                        <optgroup label="Porsche ">
-                            <option value="Porsche Cayman Navy Blue">Porsche Cayman Navy Blue</option>
-                            <option value="Porsche Boxter White">Porsche Boxter White</option>
-                            <option value="Porsche Cayenne White">Porsche Cayenne White</option>
-                            <option value="Porsche Macan Black" >Porsche Macan Black</option>
-                          </optgroup>
-                          <optgroup label="Kia">
-                            <option value="Kia Ev6 Red" >Kia Ev6 Red</option>
-                            <option value="Kia Soul Red">Kia Soul Red</option>
-                            <option value="Kia Telluride Black">Kia Telluride Black</option>
-                          </optgroup>
-                          <optgroup label="Mitsubishi ">
-                              <option value="Mitsubishi Xpander White" >Mitsubishi Xpander White</option>
-                              <option value="Mitsubishi Pajero Montero Black">Mitsubishi Pajero Montero Black</option>
-                      <option value="Mitsubishi Space star Gold">Mitsubishi Space star Gold</option>
-                          </optgroup>
+                        <optgroup label="BMW ">
+                      <option value="Bmw M34Oi XDrive Touring Black">Bmw M34Oi XDrive Touring Black</option>
+                      <option value="Bmw i3 red">Bmw i3 red</option>
+                      <option value="Bmw M55Oi XDrive Navy Blue">Bmw M55Oi XDrive Navy Blue</option>
+                      <option value="Bmw X5 White" >Bmw X5 White</option>
+                    </optgroup>
+                    <optgroup label="RangeRover ">
+                        <option value="RangeRover Defender GondwanaStone" >RangeRover Defender GondwanaStone</option>
+                        <option value="RangeRover Evoque White">RangeRover Evoque White</option>
+                        <option value="RangeRover Sport Red">RangeRover Sport Red</option>
+                      </optgroup>
+                      <optgroup label="Sports Cars">
+                        <option value="MG Cyberster Red" >MG Cyberster Red</option>
+                        <option value="Toyota Supra Yellow" >Toyota Supra Yellow</option>
+                        <option value="Chevy Corvette Green" >Chevy Corvette Green</option>
+                        <option value="Mercedes-AMG GT Orange" >Mercedes-AMG GT Orange</option>
+                        <option value="Ford GT Liquid Silver" >Ford GT Liquid Silver</option>
+                        <option value="Ford Mustang blue" >Ford Mustang blue</option>
+                      </optgroup>
+                      <optgroup label="Ford">
+                        <option value="Ford Expedition White " >Ford Expedition White </option>
+                        <option value="Ford Edge Red">Ford Edge Red</option>
+                        <option value="Ford Fusion White">Ford Fusion White</option>
+                      </optgroup>
                       <optgroup label="Audi">
                         <option value="Audi A3 Blue">Audi A3 Blue</option>
                         <option value="Audi R8 Spyder Green">Audi R8 Spyder Green</option>
@@ -51,18 +59,12 @@
                         <option value="Toyota Mirai Navy Blue">Toyota Mirai Navy Blue</option>
                         <option value="Toyota Camry Red">Toyota Camry Red</option>
                       </optgroup>
-                      <optgroup label="Sports Cars">
-                        <option value="MG Cyberster Red" >MG Cyberster Red</option>
-                        <option value="Toyota Supra Yellow" >Toyota Supra Yellow</option>
-                        <option value="Chevy Corvette Green" >Chevy Corvette Green</option>
-                        <option value="Mercedes-AMG GT Orange" >Mercedes-AMG GT Orange</option>
-                        <option value="Ford GT Liquid Silver" >Ford GT Liquid Silver</option>
-                        <option value="Ford Mustang blue" >Ford Mustang blue</option>
-                      </optgroup>
                       <optgroup label="Volvo">
                         <option value="Xc90 Volvo Grey">Xc90 Volvo Grey</option>
-                        <option value="S60 Volvo Sky Blue">S60 Volvo Sky Blue</option>
+                       
         
+        
+                        
                     </select>
                     <br><br>
                 
@@ -76,7 +78,10 @@
                     <br><br>
                     
         
-                    <input type="submit" value="Search" id='showBuy'>
+                    <input type="submit" value="Search" id='showbuy'>
+                    <input type="button" value="reset" id='reset'>
+                    <input type="button" value="ClearCart" id='clearCart'>
+                    <input type="button" value="Show Chart" id='Chart'>
         
                 
         
@@ -87,17 +92,9 @@
 
 
 
-
-
 </div>
 
-<div id="carss">
 
-    <ul id="nms"> 
-
-    </ul>
-
-</div>
 
 
 <div id="showall">
@@ -106,11 +103,17 @@
 
 </div>
 
+<div id="cars">
+
+    
+
+</div>
+
 <div id="show"> 
 
 
 </div>
-<div id="carss">
+<div id="cars">
 
 
 </div>
@@ -119,7 +122,13 @@
 </main>
 
 <footer></footer>
+<div id="removechart">
+  <canvas id="chart"></canvas>
+</div>
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="js/buy.js" ></script>
 </body>
 </html>
