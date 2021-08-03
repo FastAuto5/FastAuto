@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sell or Rent Your Car </title>
+
+
+
+    <link rel="stylesheet" href="style/sell.css">
 </head>
 <body>
 
     <header>
         <div id="logo">
-            <img src="image 2/Screenshot (8).png" />
+            <img src="image 2/new logo.png" />
             <nav>
                 <ul>
                     <li> <a href="index.html">Home</a> </li>
                     <li> <a href="buy.html">Buy Car</a> </li>
                     <li> <a href="rent.html">Rent Car</a> </li>
-                    <li> <a href="sell.html">Sell or Rent Car</a ></li>
+                    <li> <a href="sell.html">Input</a ></li>
                     <li> <a href="submit.html">Cart</a> </li>
                     <li> <a href="aboutus.html">About Us</a> </li>
                 </ul>
@@ -27,20 +31,29 @@
     </header>
 
     <main>
- <form id="myform">
+
+        <div id="paragraph">
+            <p>
+              <h2>
+                Welcome to this part of FastAuto where anyone can add their own cars for rental or sale & enjoying our services into finding a new driver for them ! If you’re looking for the finest used cars retailer in the area, you’ve come to the right place. We’ve been providing quality pre-owned vehicles at affordable prices for years. Our honesty and integrity is what keeps people coming back, and we’re always striving to get better.
+              </h2>
+            </p>
+        </div>
+
+ <div><form id="myform">
 
             <fieldset>
 
-                <label for="typeOfSell">Choose rent or buy</label>
+                <label for="typeOfSell" id="choose">Select rent or buy</label>
                 <select name="typeofsell" id="typeofsell">
 
-                <option value="rent">Rent</option>
+                <option value="rent" id="option">Rent</option>
                     <option value="buy">Buy</option>
                 </select>
                 <br>
                 <br>    
 
-                <label for="model">Model of car</label>
+                <label for="model">Car Brand</label>
                 <input type="text" name="model" id="model">
                 
                 <br>
@@ -56,7 +69,7 @@
                 <input type="text" name="price" id="price">
                 <br>
                 <br>
-                <label for="src">for the img</label>
+                <label for="src">insert img</label>
                 <input type="text" name="src" id="src">
                 <br>
                 <br> 
@@ -66,29 +79,32 @@
                 <br>
                 <br>
 
-                <input type="submit">
+                <input type="submit" id="click">
 
     
             </fieldset>
-        </form>  
+        </form> 
+    </div> 
     </main>
-    <footer>
+    <footer >
+        <center> 
       
-        <form action="https://github.com/FastAuto5/FastAuto">
+        <form action="https://github.com/FastAuto5/FastAuto" id="logo">
             <input type="image" src="image 2/github logo.png" >
         </form>
-        <form action="https://www.instagram.com/">
+        <form action="https://www.instagram.com/"  id="logo1">
             <input type="image" src="image 2/insta logo.png" >
         </form>
-        <form action="https://www.linkedin.com/home">
+        <form action="https://www.linkedin.com/home" id="logo2">
             <input type="image" src="image 2/linkedin logo.jpg" >
         </form>
         <br>
-        Fast Auto 5 © 2021
+        <p>Fast Auto 5 © 2021</p>
         <div class="road">
           <div class="road-top-half"></div>
           <div class="road-bottom-half"></div>
       </div>
+    </center>
 
     </footer>
 
