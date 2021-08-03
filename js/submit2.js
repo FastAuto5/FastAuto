@@ -5,8 +5,6 @@ let Cart = function (items) {
     this.items = items;
 };
 
-let tPrice=[];
-
 let form = document.getElementById('submitForm');
 
 
@@ -14,7 +12,7 @@ let table = document.getElementById('cart');
 console.log(table);
 let cart;
 
-let data = localStorage.getItem('rentcar');
+let data = localStorage.getItem('Buycar');
 let globParArr = JSON.parse(data);
 console.log(globParArr);
 
@@ -40,14 +38,6 @@ function clearCart() {
 
 let confirmButton;
 
-let globTotalPric = [];
-let carPrice = 0;
-let temp = 0;
-let tempArray = [];
-
-
-
-
 function showCart() {
 
     // TODO: Find the table body
@@ -57,7 +47,7 @@ function showCart() {
     // TODO: Create a TD for the delete link, quantity,  and the item
     // TODO: Add the TR to the TBODY and each of the TD's to the TR
     // let data = [];
-    let data = localStorage.getItem('rentcar');
+    let data = localStorage.getItem('Buycar');
     let parsedArr = JSON.parse(data);
     console.log(parsedArr);
     for (let i = 0; i < parsedArr.length; i++) {
@@ -81,56 +71,19 @@ function showCart() {
 
 
 
-        let tDay = document.createElement('td');
-        tRow.appendChild(tDay);
-
+        // let tDay = document.createElement('td');
+        // tRow.appendChild(tDay);
 
         // let dayInput = document.createElement('form');
         // tDay.appendChild(dayInput);
-        // let name = document.createElement('p');
-        // name.textContent = `Rent days for car ${i+1}`;
+        let name = document.createElement('p');
+        name.textContent = `Rent days for car ${i+1}`;
         let dayField = document.createElement('input');
         dayField.setAttribute('type', 'number');
         dayField.setAttribute('name', `name${i}`);
-        dayField.setAttribute('value', '1');
-        dayField.id= `input${i}`;
-        // dayField.className = "quantity";
-
-
-        let quantityField = dayField.value;
-        dayField.onchange = function () {
-            quantityField = dayField.value;
-            // console.log('hello');
-            if (isNaN(dayField.value) || dayField.value <= 0) {
-                dayField.value = 1;
-                quantityField = 1;
-            }
-            let totalPrice = 0;
-            carPrice = quantityField * 5;
-            tPrice.textContent = carPrice;
-            totalPrice = totalPrice + carPrice;
-            // globTotalPric = totalPrice;
-            // console.log(totalPrice);
-            temp = dayField.value;
-            // console.log(tPrice.id);
-            globTotalPric.push(tPrice.textContent);
-            // console.log(globTotalPric);
-        };
-
-
-        carPrice = quantityField * 5;
-        tPrice = document.createElement('td');
-        tRow.appendChild(tPrice);
-        tPrice.textContent = carPrice;
-        tPrice.id = i;
-       
-// console.log(tPrice);
-
-        // dayField.setAttribute('onchange',"changable()");
-
-        // form.appendChild(name);
-        tDay.appendChild(dayField);
-
+        form.appendChild(name);
+        form.appendChild(dayField);
+        
 
         // tDataDelete.textContent = document.createElement('button')
         tDataDelete.appendChild(deleteButton);
@@ -140,11 +93,11 @@ function showCart() {
 
         // let tConfrim = document.createElement('td');
         // tRow.appendChild(tConfrim);
-        // confirmButton = document.createElement('button');
-        // confirmButton.textContent = 'Confirm';
-        // confirmButton.type = "submit";
-        // form.appendChild(confirmButton);
-        // form.addEventListener('submit', confirmClick);
+        confirmButton = document.createElement('button');
+        confirmButton.textContent = 'Confirm';
+        confirmButton.type = "submit";
+        form.appendChild(confirmButton);
+        form.addEventListener('submit', confirmClick);
 
     }
 
@@ -156,15 +109,15 @@ let daysArray = [];
 function confirmClick(event) {
     event.preventDefault();
     console.log(event.target.name1.valueAsNumber);
-    let data = localStorage.getItem('rentcar');
+    let data = localStorage.getItem('Buycar');
     let parsedArr = JSON.parse(data);
-    for (let i = 0; i < parsedArr.length; i++) {
+    for (let i = 0; i < parsedArr.length; i++){
         let dayRent = eval(`event.target.name${i}.valueAsNumber`);
         console.log(dayRent);
         let days = dayRent;
         daysArray.push(days);
     }
-
+    
     console.log(daysArray);
 }
 
@@ -172,7 +125,7 @@ function confirmClick(event) {
 
 function removeItemFromCart(event) {
     // let data = [];
-    let data = localStorage.getItem('rentcar');
+    let data = localStorage.getItem('Buycar');
     let parsedArr = JSON.parse(data);
     if (event.target.id !== null) {
         console.log(event.target.id);
@@ -185,7 +138,7 @@ function removeItemFromCart(event) {
         console.log(parsedArr.length);
         localStorage.clear();
         let stringArr = JSON.stringify(globParArr);
-        localStorage.setItem('rentcar', stringArr);
+        localStorage.setItem('Buycar', stringArr);
         renderCart();
 
     }
@@ -218,7 +171,7 @@ function click(event) {
 
             let secText = document.createElement('p');
             textDiv.appendChild(secText);
-            secText.textContent = `Thanks ${nameInput}. Your ${globParArr[i].model} will be delvired at ${locationInput} after 3 days. The total cost will be ${globTotalPric} fot this car.`;
+            secText.textContent = `Thanks ${nameInput}. Your ${globParArr[i].model} will be delvired at ${locationInput} after 3 days. The total cost will be ${5*daysArray[i]} fot this car.`;
 
         }
 
@@ -246,5 +199,3 @@ function clearFun() {
     //  clearButton.textContent= "";
 
 }
-
-console.log(tPrice);

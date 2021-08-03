@@ -536,7 +536,6 @@ function resetAll() {
     // render();
 
 
-
 }
 
 let clearcart = document.getElementById('clearCart');
