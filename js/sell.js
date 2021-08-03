@@ -3,13 +3,13 @@
 let myform = document.getElementById('myform');
 myform.addEventListener('submit', formsubmit);
 
-function Newcar(name, Type, price, src, description) {
+function Newcar(model, year, price, src, text) {
 
-    this.name = name;
-    this.Type = Type;
+    this.model = model;
+    this.year = year;
     this.price = price;
     this.src = src;
-    this.description = description;
+    this.text = text;
     this.isRent = false;
     this.isBuy = false;
     newcar.push(this);
@@ -22,18 +22,18 @@ let storeInfoBuy = [];
 function formsubmit(event) {
     event.preventDefault();
 
-    let name = event.target.namefiled.value;
-    let Type = event.target.yearOfcar.value;
-    let price = Number(event.target.rentofcar.value);
+    let model = event.target.model.value;
+    let year = parseInt(event.target.year.value);
+    let price = parseInt(event.target.price.value);
     let src = event.target.src.value;
-    let description = event.target.description.value;
+    let text = event.target.text.value;
 
 
     let origin = event.target.typeofsell.value;
 
     if (origin === 'rent') {
         // console.log(storeInfoRent);
-        let rentCar = new Newcar(name, Type, price, src, description);
+        let rentCar = new Newcar(model, year, price, src, text);
         rentCar.isRent = true;
         storeInfoRent.push(rentCar);
         localStorage.setItem('rentInput', JSON.stringify(storeInfoRent));
@@ -42,7 +42,7 @@ function formsubmit(event) {
 
     else if (origin === 'buy') {
 
-        let buyCar = new Newcar(name, Type, price, src, description);
+        let buyCar = new Newcar(model, year, price, src, text);
         buyCar.isBuy = true;
         storeInfoBuy.push(buyCar);
         localStorage.setItem('buyInput', JSON.stringify(storeInfoBuy));
