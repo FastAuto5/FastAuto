@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/submit.css">
+    <script src="js/submit.js" async></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+          <img src="image 2/9964f12f8d0246069ff50958022597c3_360.png" />
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="buy.html">Buy Car</a> </li>
+                    <li> <a href="rent.html">Rent Car</a> </li>
+                    <li> <a href="sell.html">Sell or Rent Car</a ></li>
+                    <li> <a href="submit.html">Cart</a> </li>
+                    <li> <a href="aboutus.html">About Us</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <form id="submit">
+               <p>
+                   Username:
+                   <input type="text" name="username" id="username">
+               </p> 
+                <br><br>
+                <p>
+                    Location:
+                    <input type="text" name="location" id="location">
+                </p>
+                <br><br>
+                <button id="submit">
+                    submit
+                </button>
+            </form>
+        </div>
+
+        <div id="thankTextDiv">
+
+        </div>
+
+        <section class="deck col-1" id="col-1">
+            <div class="card">
+              <div>
+                <h1 id="cartText">Your Cart</h1>
+              </div>
+              <div class="copy" id="copy">
+                <br><br>
+                <ol>
+                  <li class="liCart">Please add the days of rent in the Quantity field for the rented cars. Also, add the quantity of cars you want to buy in the Quantity field.</li>
+                  <li class="liCart">Click the "X" next to any item to remove it from your cart</li>
+                </ol>
+              </div>
+            </div>
+          </section>
+
+        <section class="deck col-1">
+            <div id="cart-container" class="card">
+
+              <table id="cart">
+                <thead>
+                  <tr>
+                    <th>Remove</th>
+                    <th>Car</th>
+                    <th>Production Year</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
+                  </tr>
+                  <tr>
+                    <th>Total</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th id="totaaaaaaaaaaaaaaaaaaal"></th>
+                  </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+                <tfoot></tfoot>
+              </table>
+              <form id="submitForm"></form>
+              <button id='clearall'>
+                clear all
+            </button>
+            </div>
+          </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+      <center>
+      <br>
+      <form action="https://github.com/FastAuto5/FastAuto">
+          <input type="image" src="image 2/github logo.png" >
+      </form>
+      <form action="https://www.instagram.com/">
+          <input type="image" src="image 2/insta logo.png" >
+      </form>
+      <form action="https://www.linkedin.com/home">
+          <input type="image" src="image 2/linkedin logo.jpg" >
+      </form>
+      <br>
+     <p> Fast Auto 5 © 2021</p>
+  </center>
+  </footer>
+
+
+    <!-- <script src="js/submit2.js"></script> -->
+    
+</body>
+
+</html>
