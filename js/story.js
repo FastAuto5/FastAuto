@@ -3,6 +3,7 @@ let inputstoryyelement = document.getElementById('inputstory');
 let prevreviewselement = document.getElementById('prevreviews');
 let localstoragedata;
 let renderpar;
+let renderimage;
 
 
 function Review(name, sex, own, story, img, rate) {
@@ -14,7 +15,7 @@ function Review(name, sex, own, story, img, rate) {
     this.rate = rate;
 
     Review.prototype.allreviews.push(this);
-   updateStorage();
+    updateStorage();
 }
 Review.prototype.allreviews = [];
 
@@ -22,10 +23,13 @@ Review.prototype.allreviews = [];
 Review.prototype.renderstories = function () {
 
     renderpar = document.createElement('p');
-    
-    
+    renderimage = document.createElement('img');
+    prevreviewselement.appendChild(renderimage);
     prevreviewselement.appendChild(renderpar);
-
+    renderimage.className="imagesclass";
+    renderpar.className="renderparclass";
+    
+    renderimage.src = this.img;
     renderpar.textContent =
         `Name : ${this.name}  
         Sex : ${this.sex} Ownership: ${this.own} 
@@ -42,16 +46,16 @@ inputstoryyelement.addEventListener('submit', submitter);
 
 
 function updateStorage() {
-     let stringArr=JSON.stringify(Review.prototype.allreviews);
+    let stringArr = JSON.stringify(Review.prototype.allreviews);
     //  console.log(Review.prototype.allreviews);
     //  console.log(stringArr);
-    localStorage.setItem('allreviewskey',stringArr);
+    localStorage.setItem('allreviewskey', stringArr);
 
-    
-if (Review.prototype.allreviews.lemgth!=null) {
-    Review.prototype.allreviews=parsedArr
-} 
-// renderpar;
+
+    if (Review.prototype.allreviews.lemgth != null) {
+        Review.prototype.allreviews = parsedArr
+    }
+    // renderpar;
 }
 
 
@@ -77,22 +81,31 @@ function submitter(e) {
 
 }
 let renderpar2;
+let renderimage2;
 function load() {
-    localstoragedata=JSON.parse(localStorage.getItem('allreviewskey'));
-    Review.prototype.allreviews=localstoragedata;
-    
-    for (let index = 0; index < Review.prototype.allreviews.length; index++) {
-        renderpar2 = document.createElement('p');
-    
-    
-    prevreviewselement.appendChild(renderpar2);
+    localstoragedata = JSON.parse(localStorage.getItem('allreviewskey'));
+    if (localstoragedata != null) {
+        Review.prototype.allreviews = localstoragedata;
 
-        renderpar2.textContent =
-        `Name : ${Review.prototype.allreviews[index].name}  
+        for (let index = 0; index < Review.prototype.allreviews.length; index++) {
+            renderpar2 = document.createElement('p');
+            
+            renderimage2 = document.createElement('img');
+            prevreviewselement.appendChild(renderimage2);
+            
+            renderimage2.className="imagesclass";
+            renderpar2.className="renderparclass";
+
+            prevreviewselement.appendChild(renderpar2);
+
+            renderimage2.src=Review.prototype.allreviews[index].img;
+            renderpar2.textContent =
+                `Name : ${Review.prototype.allreviews[index].name}  
         Sex : ${Review.prototype.allreviews[index].sex} Ownership: ${Review.prototype.allreviews[index].own} 
         My thoughts about this Car : ${Review.prototype.allreviews[index].story} 
         how would you rate your experience with this car :  ${Review.prototype.allreviews[index].rate} `;
-        
+
+        }
     }
 }
 load();
