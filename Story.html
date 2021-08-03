@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Story</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/story.css'>
+    
+</head>
+<body>
+    
+
+<header>
+
+</header>
+
+<main>
+
+    <h1>real life experiences  </h1>
+
+   <form id="inputstory">
+       <fieldset>
+           <label for="nameinputid">Enter your Name</label>
+            <input type="text" name="nameinput" id="nameinputid">
+            <!-- nameinput sexname ownname storyname imgname ratename-->
+            
+            <label for="sexid">i am </label>
+            <select name="sexname" id="sexid">
+                <option value="male">Male</option>
+                <option value="female">female</option>
+            </select>.
+            <br>
+            <label for="ownname">do you own this car</label>
+            <select name="ownname" id="ownid">
+                <option value="i own this car">yes I own this car</option>
+                <option value="i do not own this car">no I don't own this car</option>
+            </select>.
+            <br>
+            <label for="storyid">tell us our experience with this car</label>
+            <input type="text" id="storyid" name="storyname">
+            <br>
+            <label for="imgid">show us a picture of your car</label>
+            <input type="text" name="imgname" id="imgid"> 
+            <br>
+            <label for="rateid">rate your experience with this car from</label>
+            <input type="range" name="ratename" id="rateid">
+            <br>
+            <input type="submit" value="upload your experience">
+       </fieldset>
+   </form>
+
+   <div id="prevreviews" class="prereviewsclass"> 
+    <!-- add border to this -->
+       <h1>other users reviews</h1>
+    <!-- <ul id="prevreviews">
+       
+    </ul> -->
+   </div>
+
+</main>
+ 
+<footer>
+   <script src="js/story.js"></script>
+</footer>
+</body>
+</html>
