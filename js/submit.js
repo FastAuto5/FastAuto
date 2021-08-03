@@ -106,7 +106,7 @@ function showCart() {
                 quantityField = 1;
             }
             let totalPrice = 0;
-            carPrice = quantityField * 5;
+            carPrice = quantityField * globParArr[i].price;
             tPrice.textContent = carPrice;
             totalPrice = totalPrice + carPrice;
             // globTotalPric = totalPrice;
@@ -118,7 +118,7 @@ function showCart() {
         };
 
 
-        carPrice = quantityField * 5;
+        carPrice = quantityField * globParArr[i].price;
         tPrice = document.createElement('td');
         tRow.appendChild(tPrice);
         tPrice.textContent = carPrice;

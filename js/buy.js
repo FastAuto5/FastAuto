@@ -30,7 +30,7 @@ function updateStorage() {
   let stringArr = JSON.stringify(buy);
 
 
-  localStorage.setItem('buycar', stringArr);
+  localStorage.setItem('rentcar', stringArr);
 
 }
 
@@ -61,11 +61,10 @@ function getVotes(){
 }
 
 
-
 function getStorage() {
 
   for (let i = 0; i < localStorage.length; i++) {
-    let data = localStorage.getItem('buycar');
+    let data = localStorage.getItem('rentcar');
     let parsedArr = JSON.parse(data);
     if (parsedArr !== null) {
       buy = parsedArr;
@@ -125,7 +124,7 @@ function carInstances() {
 
 
 
-  new Car('Ford GT Liquid Silver ', '2019', '35,000', 'img/Ford GT Liquid Silver  2017 3.jpg', 'The Ford GT began life as a concept car designed in anticipation of the automaker\'s centennial year and as part of its drive to showcase and revive its  names such as Mustang and Thunderbird. At the 2002 North American International Auto Show,[3] Ford unveiled a new GT40 Concept car. Camilo Pardo, the then head of Ford\' studio, is credited as the chief designer of the GT and worked under the guidance of J Mays. Carroll Shelby, the original designer of the Shelby GT 500, was brought in by Ford to help develop the GT; which included performance testing of the prototype car. While under development, the project was called Petunia.This is what true innovation looks like. From its 3.5L EcoBoost  technology to its ultra-efficient aerodynamics, the Ford GT is the culmination of everything great we do at Ford. And it’s the same passion for innovation that can be seen throughout our entire vehicle lineup.');
+  new Car('Ford GT Liquid Silver ', '2019', '35000', 'img/Ford GT Liquid Silver  2017 3.jpg', 'The Ford GT began life as a concept car designed in anticipation of the automaker\'s centennial year and as part of its drive to showcase and revive its  names such as Mustang and Thunderbird. At the 2002 North American International Auto Show,[3] Ford unveiled a new GT40 Concept car. Camilo Pardo, the then head of Ford\' studio, is credited as the chief designer of the GT and worked under the guidance of J Mays. Carroll Shelby, the original designer of the Shelby GT 500, was brought in by Ford to help develop the GT; which included performance testing of the prototype car. While under development, the project was called Petunia.This is what true innovation looks like. From its 3.5L EcoBoost  technology to its ultra-efficient aerodynamics, the Ford GT is the culmination of everything great we do at Ford. And it’s the same passion for innovation that can be seen throughout our entire vehicle lineup.');
 
   new Car('Ford Mustang blue ', '2018', '20,000', 'img/Ford Mustang blue 2015 4.jpg', 'The world’s best-selling sports coupe is back and better than ever. Ford has unveiled the all-new 2018 Ford Mustang, which is the most advanced Mustang ever thanks to a comprehensive suite of advanced new technology, safety and convenience features. The 2018 Mustang also features improved performance over the 2017 Mustang thanks to powerful engine upgrades and the all-new available 10-speed automatic transmission. And you’ll be able to easily handle all that additional power with the available MagneRide suspension, which improves all aspects of the 2018 Mustang’s handling abilities. So let’s get right down to business and take a closer look at the all-new Mustang, including its release date.');
   new Car('Ford Expedition White ', '2021', '30,000', 'img/Ford Expedition White 2021.jpg', 'Power, style and plenty of space for passengers and cargo give the 2021 Ford Expedition its swagger and imposing presence on the road. Equipped with the available Heavy-Duty Trailer Tow Package.* Add to that an available premium B&O Sound System by Bang and Olufsen, available heated and ventilated seating and plenty of tech to keep you confident and connected on the road. The 2021 Expedition also features the legendary King Ranch®️ trim, as well as the attention-grabbing Stealth Edition, Texas Edition and available FX4 Off-Road Package. It’s the one and only Ford Expedition and it’s Built Ford Proud.');
