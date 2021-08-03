@@ -2,11 +2,11 @@
 let inputstoryyelement = document.getElementById('inputstory');
 let prevreviewselement = document.getElementById('prevreviews');
 let localstoragedata;
-let renderpar;
+let renderpar1,renderpar2,renderpar3,renderpar4,renderpar5,renderpar6;
 let renderimage;
 
 
-function Review(name, sex, own, story, img, rate) {
+function Review(name, sex, own, story, img, rate) {//construction fun for review objects
     this.name = name;
     this.sex = sex;
     this.own = own;
@@ -20,21 +20,45 @@ function Review(name, sex, own, story, img, rate) {
 Review.prototype.allreviews = [];
 
 
-Review.prototype.renderstories = function () {
+Review.prototype.renderstories = function () {          //it creates the p m section element
+    let rendersection=document.createElement('section');
+    prevreviewselement.appendChild(rendersection);
 
-    renderpar = document.createElement('p');
+    renderpar1 = document.createElement('p');           
+    rendersection.appendChild(renderpar1);
+    renderpar2 = document.createElement('p');
+    rendersection.appendChild(renderpar2);
+    renderpar3 = document.createElement('p');
+    rendersection.appendChild(renderpar3);
+    renderpar4 = document.createElement('p');
+    rendersection.appendChild(renderpar4);
+    renderpar5 = document.createElement('p');
+    rendersection.appendChild(renderpar5);
+    renderpar6 = document.createElement('p');
+    rendersection.appendChild(renderpar6);
+    
+
     renderimage = document.createElement('img');
-    prevreviewselement.appendChild(renderimage);
-    prevreviewselement.appendChild(renderpar);
+    rendersection.appendChild(renderimage);
+    
     renderimage.className="imagesclass";
-    renderpar.className="renderparclass";
+    renderpar1,renderpar2,renderpar3,renderpar4,renderpar5,renderpar6.className="renderparclass";
+
     
     renderimage.src = this.img;
-    renderpar.textContent =
-        `Name : ${this.name}  
-        Sex : ${this.sex} Ownership: ${this.own} 
-        My thoughts about this Car : ${this.story} 
-        how would you rate your experience with this car :  ${this.rate} `;
+
+    renderpar1.textContent=` dfgioh ${this.name}`;
+    renderpar2.textContent=this.own;
+    renderpar3.textContent=this.sex;
+    renderpar4.textContent=this.story;
+    renderpar5.textContent=this.rate;
+
+
+    // renderpar.textContent =
+    //     `Name : ${this.name}  
+    //     Sex : ${this.sex} Ownership: ${this.own} 
+    //     My thoughts about this Car : ${this.story} 
+    //     how would you rate your experience with this car :  ${this.rate} `;
 
     console.log(renderpar);
     updateStorage();
@@ -80,33 +104,62 @@ function submitter(e) {
 
 
 }
-let renderpar2;
+// let renderpar1;
+let renderpar21,renderpar22,renderpar23,renderpar24,renderpar25,renderpar26;
+
 let renderimage2;
+
 function load() {
     localstoragedata = JSON.parse(localStorage.getItem('allreviewskey'));
     if (localstoragedata != null) {
         Review.prototype.allreviews = localstoragedata;
-
+        
+        let rendersection;
         for (let index = 0; index < Review.prototype.allreviews.length; index++) {
-            renderpar2 = document.createElement('p');
+            // renderpar2main = document.createElement('p');
+            rendersection=document.createElement('section');
+            prevreviewselement.appendChild(rendersection);
             
+            renderpar21 = document.createElement('p');           
+            rendersection.appendChild(renderpar21);
+            renderpar22 = document.createElement('p');
+            rendersection.appendChild(renderpar22);
+            renderpar23 = document.createElement('p');
+            rendersection.appendChild(renderpar23);
+            renderpar24 = document.createElement('p');
+            rendersection.appendChild(renderpar24);
+            renderpar25 = document.createElement('p');
+            rendersection.appendChild(renderpar25);
+            renderpar26 = document.createElement('p');
+            rendersection.appendChild(renderpar26);
+
             renderimage2 = document.createElement('img');
-            prevreviewselement.appendChild(renderimage2);
+            rendersection.appendChild(renderimage2);
             
             renderimage2.className="imagesclass";
-            renderpar2.className="renderparclass";
+            renderpar1,renderpar2,renderpar3,renderpar4,renderpar5,renderpar6.className="renderparclass";
+            // renderpar2.className="renderparclass";
 
-            prevreviewselement.appendChild(renderpar2);
+            // rendersection.appendChild(renderpar2);
 
             renderimage2.src=Review.prototype.allreviews[index].img;
-            renderpar2.textContent =
-                `Name : ${Review.prototype.allreviews[index].name}  
-        Sex : ${Review.prototype.allreviews[index].sex} Ownership: ${Review.prototype.allreviews[index].own} 
-        My thoughts about this Car : ${Review.prototype.allreviews[index].story} 
-        how would you rate your experience with this car :  ${Review.prototype.allreviews[index].rate} `;
+
+        
+            renderpar21.textContent=this.name;
+            renderpar22.textContent=this.own;
+            renderpar23.textContent=this.sex;
+            renderpar24.textContent=this.story;
+            renderpar25.textContent=this.rate;
+
+        //     renderpar2.textContent =
+        //         `Name : ${Review.prototype.allreviews[index].name}  
+        // Sex : ${Review.prototype.allreviews[index].sex} Ownership: ${Review.prototype.allreviews[index].own} 
+        // My thoughts about this Car : ${Review.prototype.allreviews[index].story} 
+        // how would you rate your experience with this car :  ${Review.prototype.allreviews[index].rate} `;
 
         }
     }
 }
+console.log(load());
 load();
 console.log(localstoragedata);
