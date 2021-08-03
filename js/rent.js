@@ -141,7 +141,7 @@ function userClick(event) {
 
       ulImg.appendChild(liImg);
       ulImg.appendChild(liInfo);
-
+    ulImg.className='classimg';
       
       imgages=document.createElement('img');
       liImg.appendChild(imgages);
@@ -235,7 +235,7 @@ function render(){
     divShow.addEventListener('click', userClick);
 
     ulImg=document.createElement('ul');
-
+    ulImg.className='firstul';
     divShow.appendChild(ulImg);
 
     liImg=document.createElement('li');
