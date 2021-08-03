@@ -227,7 +227,7 @@ function userClick(event) {
 
 
 function render(){
-
+  getInfo()
   for (let i = 0; i < cars.length; i++) {
     // if the type rental cars[i].type==rent
 
@@ -468,6 +468,31 @@ function clearCart()
 
 
 
+
+function getInfo(){
+
+  let x=localStorage.getItem('rentInput');
+
+
+  let parsedArr = JSON.parse(x);
+  if (parsedArr !== null) {
+    // cars = parsedArr;
+
+   
+    for (let i = 0; i < parsedArr.length; i++) {
+      // cars.push(  (parsedArr[i]));
+      new Car(parsedArr[i].model,parsedArr[i].year,parsedArr[i].price,parsedArr[i].src,parsedArr[i].text);
+
+     
+    }
+
+
+   
+    // new Car(parsedArr);
+    console.log('yousef',parsedArr);
+    console.log('issa',cars);
+
+  }}
 
 
 
