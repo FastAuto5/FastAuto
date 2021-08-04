@@ -313,7 +313,7 @@ function render() {
     imgages.src = cars[i].src;
     imgages.className = 'styleimg';
 
-    imgages.setAttribute('width', 450);
+    imgages.setAttribute('width', 300);
     imgages.id = i;
 
 
