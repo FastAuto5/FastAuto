@@ -1,237 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fast Auto 5</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+  <meta name="author" content="Farouk,Reem,Issa,Mohammad,Ahmad,Tariq,Yousef">
+  <meta name="keywords" content="Cars,Rent,Jordan">
+<meta name="description" content="Rent and Buy cars">
+<meta name="application-name" content="FastAuto5">
 
 
 
-    <link rel="stylesheet" href="style/style.css">
+  <title>Fast Auto 5</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
 
-     <style>
-        /*from W3 schools*/
-        
-        /* Slideshow container */
-        .slideshow-container {
-          max-width: 1000px;
-          position: relative;
-          margin: auto;
-        }
-        
-        /* Next & previous buttons */
-        .prev, .next {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 30px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-        
-        /* Position the "next button" to the right */
-        .next {
-          right: 0;
-          border-radius: 3px 0 0 3px;
-        }
-        
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover, .next:hover {
-          background-color: rgba(0,0,0,0.8);
-        }
-        
-        /* Caption text */
-        .text {
-          color: #f2f2f2;
-          font-size: 15px;
-          padding: 8px 12px;
-          position: absolute;
-          bottom: 8px;
-          width: 100%;
-          text-align: center;
-        }
-        
-        /* Number text (1/3 etc) */
-        .numbertext {
-          color: #f2f2f2;
-          font-size: 12px;
-          padding: 8px 12px;
-          position: absolute;
-          top: 0;
-        }
-        
-        /* The dots/bullets/indicators */
-        .dot {
-          cursor: pointer;
-          height: 15px;
-          width: 15px;
-          margin: 0 2px;
-          background-color: #bbb;
-          border-radius: 50%;
-          display: inline-block;
-          transition: background-color 0.6s ease;
-        }
-        
-        .active, .dot:hover {
-          background-color: #717171;
-        }
-        
-        /* Fading animation */
-        .fade {
-          -webkit-animation-name: fade;
-          -webkit-animation-duration: 1.5s;
-          animation-name: fade;
-          animation-duration: 1.5s;
-        }
-        
-        @-webkit-keyframes fade {
-          from {opacity: .4} 
-          to {opacity: 1}
-        }
-        
-        @keyframes fade {
-          from {opacity: .4} 
-          to {opacity: 1}
-        }
-        
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-          .prev, .next,.text {font-size: 11px}
-        }
-        </style>    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
 
-        </head> 
+
+
+  <link rel="stylesheet" href="style/style.css">
+
+
+  <style>
+    /*from W3 schools*/
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 30px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+  </style>
+
+</head>
 
 <body>
-  
-  
-    <header>
 
-        <div id="logo">
-          <img src="image 2/LOGO BLUE.png" />
-          <nav>
-                <ul>
-                    <li> <a href="index.html">Home</a> </li>
-                    <li> <a href="buy.html">Buy Car</a> </li>
-                    <li> <a href="rent.html">Rent Car</a> </li>
-                    <li> <a href="sell.html">Input</a ></li>
-                    <li> <a href="submit.html">Cart</a> </li>
-                    <li> <a href="aboutus.html">About Us</a> </li>
-                </ul>
-            </nav>
+
+  <header>
+
+    <div id="logo">
+      <img src="image 2/LOGO BLUE.png" />
+      <nav>
+        <ul>
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="buy.html">Buy Car</a> </li>
+          <li> <a href="rent.html">Rent Car</a> </li>
+          <li> <a href="sell.html">Add Car</a></li>
+          <li> <a href="submit.html">Cart</a> </li>
+          <li> <a href="aboutus.html">About Us</a> </li>
+        </ul>
+      </nav>
+    </div>
+
+
+  </header>
+
+  <main>
+    <!--from W3 Schools-->
+    <!-- Slideshow container -->
+
+
+    <div id="slideshow-container">
+      <fieldset>
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="image 2/CarS3.jpg" style="width:100%">
+          <div class="text">Showroom 1</div>
         </div>
-    
+        <div class="blink_me"></div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="image 2/CARS.jpg" style="width:100%">
+          <div class="text">Showroom 2</div>
+        </div>
 
-    </header>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="image 2/1000x-1.jpg" style="width:100%">
+          <div class="text">Showroom 3</div>
+        </div>
 
-    <main>
-        <!--from W3 Schools-->
-        <!-- Slideshow container -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    </fieldset>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
 
 
-        <div id="slideshow-container">
-<fieldset>
-  
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="image 2/CarS3.jpg" style="width:100%">
-              <div class="text">Showroom 1</div>
-            </div>
-            <div class="blink_me"></div>
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="image 2/CARS.jpg" style="width:100%">
-              <div class="text">Showroom 2</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="image 2/1000x-1.jpg" style="width:100%">
-              <div class="text">Showroom 3</div>
-            </div>
-            
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
-          </fieldset>
-            
-            <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
-              }
-              for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-            }
-            </script>
-            
-
-  <h2>
+    <h2>
       <p>
-          Welcome to Fast Auto 5 where you can find premium cars to rent or buy from many brands and however you would like. Fast Auto 5 also gives you the option to add your own car for Rent/Sale. We offer competitive prices among the market. Our fleet is checked regulary to maintain the best driving performances. We also give our customers road service included for Emergencies.
-        </p>
-<p>
-          Please Move Forward with our Provided Options Below.
-        </p><br>
-        <p>Please make sure to either rent cars or buy cars. Also, make sure to empty your cart each time.</p>
-      </h2>
+        Welcome to Fast Auto 5 where you can find premium cars to rent or buy from many brands and however you would
+        like. Fast Auto 5 also gives you the option to add your own car for Rent/Sale. We offer competitive prices among
+        the market. Our fleet is checked regulary to maintain the best driving performances. We also give our customers
+        road service included for Emergencies.
+      </p>
+      <p>
+        Please Move Forward with our Provided Options Below.
+      </p><br>
+      <p>Please make sure to either rent cars or buy cars. Also, make sure to empty your cart each time.</p>
+    </h2>
 
-<div class="carsBoo1">
-  <form action="Buy.html">
-    <input id="click2" type="image" src="image 2/CARS4.jpg"style="width: 100%;" >
-</form>
-<h3 class="Class2">
-  Cars To Buy
-</h3>
-</div>
+    <div class="carsBoo1">
+      <form action="buy.html">
+        <input id="click2" type="image" src="image 2/CARS4.jpg" style="width: 100%;">
+      </form>
+      <h3 class="Class2">
+        Cars To Buy
+      </h3>
+    </div>
 
-<div class="carsBoo">
+    <div class="carsBoo">
       <form action="rent.html">
+
         <input id="click2" type="image" src="image 2/CARS6.jpg"style="width: 100%;" >
     </form>
     <h3 class="Class2">
@@ -261,8 +292,8 @@
       </p>
       </div>
     </center>
-    </footer>
-    
+  </footer>
+
 </body>
 
 
