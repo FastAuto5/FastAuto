@@ -1,4 +1,3 @@
-.{box-sizing:border-box;}
 .logo{
   width: 10%;
  border-radius: 50%;
@@ -9,14 +8,14 @@ margin-top: -6%;
 padding-bottom: 0%;
 margin-bottom: 0%;
 }
-
 .navulli {
+  
 float: left;
-margin-left: 9%;
-padding: -10%; 
+margin-left: 4%;
+padding-left: 0%; 
 display: inline;
-} 
 
+} 
 .jhgfd{
 padding-bottom: 0%;
 /* margin-bottom: 20%; */
@@ -24,41 +23,40 @@ padding-left: 9%;
 position: sticky;
 top: 0%;
 margin-bottom: 2%;
-padding-left: 8%;
+padding-left: 50%;
 overflow: hidden;
 background-position: center;
 border-right: none; 
 margin-top: -7%;
 }
-/*
 .headerujmhn  {
 margin-top: -1%;
 vertical-align: text-top; 
 background-color: #035397;
 height: 110px;
-
 height: 130px;
 padding-bottom: 1%;
-}*/
+}
 .ulol{
-color: blue;
-text-align: center;
-text-decoration: none;
-margin-top: 0%;
-padding-top: 2%;
-margin-bottom: 0%;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-   transition: 1s;
-   width: 150%;
-   float: right;
-   background-color: #D8E3E7;
-   border-radius: 15px 50px 30px;
-   padding: 9px 15px;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   margin-top: 15%;
-   text-shadow: 0px 0px 1.2px blue;
-   color:black;
-   font-family: 'Lobster', cursive;   
+  color: blue;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 0%;
+  padding-top: 2%;
+  margin-bottom: 0%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+      transition: 1s;
+      width: 150%;
+      display: inline block;
+      float: right;
+      background-color: #D8E3E7;
+      border-radius: 15px 50px 30px;
+      padding: 9px 15px;
+      text-shadow: 0px 0px 1.2px blue;
+      color:black;
+      /* font-family: 'Lobster', cursive;    */
+      width: 80%; 
+   
  }
 .ulol:hover {
  z-index: -1;
@@ -92,69 +90,47 @@ font-family: cursive;
    margin-bottom: 0%;
    margin-top: 0%;
 } 
-
-
-
 .headerujmhn  {
  margin-top: -1%;
 vertical-align: text-top; 
 background-color: #035397;
-
 padding-bottom: 1%; 
 }
 
-#inputstory{
-  /* background-color: rgb(191, 203, 209); */
-  /* background-image: url("style/Untitled-1.png"); */
-}
 /* /////////////////////////////////// */
 #firstheading{
-  width: 100%;
+  width: 48%;
+  height: 35px;
+  margin-left: 26%;
   text-align: center;
-  border: 3px solid rgb(26, 157, 209);
-  background-color:rgb(251,133,0); 
+  border: 3px solid #00f;
+  background-color:#D8E3E7;
   border-radius: 30px;
+  font-family: 'Dancing Script', cursive;  font-size: 150%;
+  margin-top: 3%;
 }
-#nameinputid{
- 
-}
-#sexid{
-  margin-left: 
-}
-#nameinputid{
-  
-}
-#ownid{
 
-}
-#imgid{
 
-}
+
 #submitid{
 margin-top: 2%;
 width: 100%;
 }
-#inputstory{
 
-}
 #userreviews{
   text-align: center;
 }
-
 fieldset{
   border-radius: 2%;
-
   position: relative;
 }
-
 section{
   height: 70%;
   padding-top: 10%;
   width: 100%;
-  border: 10px solid rgb(26, 157, 209);
-  background-color:rgb(251,133,0); 
+  border: 10px solid #035397;
+  background-color:#D8E3E7; 
   border-radius: 20%;
-  
   margin: 5px;
 }
 section img{
@@ -163,7 +139,6 @@ section img{
   margin-bottom: 5%;
   margin-left: 45%;
   border-radius: 10%;
-
 }
 section p{
   width: 80%;
@@ -172,16 +147,11 @@ section p{
   text-align: left;
   margin-left: 10%;
   margin-top: 3%;
-  background-color:rgb(42, 133, 179) ;
+  background-color:#035397;
   border-radius: 30px;
   padding: 1%;
-
-  
 }
-form{
-  
 
-}
 input[type=range]{
   width: 100%;
   padding: 12px 20px;
@@ -200,7 +170,6 @@ input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box;
 }
-
 input[type=submit] {
   width: 100%;
   background-color: #4CAF50;
@@ -211,14 +180,22 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #45A049;
 }
-
 div {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: white;
   padding: 20px;
 }
-
+h2{
+  padding-top: 5%;
+}
+main{
+  background-color: white;
+}
+fieldset{
+  background-color: #D8E3E7;
+  border-color: #035397;
+   font-family: 'STIX Two Text', serif; 
+}

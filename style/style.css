@@ -37,8 +37,7 @@ h2 p{
 }
 nav ul li {
     display: inline-block;
-   float: left;
-   margin-left: 9%;
+   margin-left: 3%;
    padding: -10%; 
    display: inline;
    float: left;
@@ -73,18 +72,21 @@ li a {
       padding: 9px 15px;
       text-shadow: 0px 0px 1.2px blue;
       color:black;
-      font-family: 'Lobster', cursive;   
+      /* font-family: 'Lobster', cursive;    */
+      width: 80%;
 }
   ul {
     padding-left: 9%;
       position: sticky;
     top: 0%;
     margin-bottom: 13%;
-    padding-left: 8%;
+    padding-left: 50%;
     overflow: hidden;
     background-position: center;
     border-right: none; 
     margin-top: -7%;
+    width: 70%;
+  
 
   } 
   a:hover {
@@ -150,12 +152,7 @@ h2 {
     text-align:right;
     margin-bottom: 20%; 
 }  
-@keyframes example {
-  0%   {background-color: red;}
-  25%  {background-color: yellow;}
-  50%  {background-color: blue;}
-  100% {background-color: green;}
-}
+
       .carsBoo1{
         margin-top: 6%;
         padding: 2%;
@@ -168,6 +165,7 @@ h2 {
         background-color: #035397;
         animation-name: example;
         animation: example 5s infinite;
+        margin-left: 10%;
 
 
     }
@@ -178,11 +176,9 @@ h2 {
         padding: 25px 16px;
       }
 
-      @keyframes example {
-        0%   {background-color: red;}
-        25%  {background-color: yellow;}
-        50%  {background-color: blue;}
-        100% {background-color: green;}
+      .carsBoo1:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+        background-color: rgb(3,83,151,0.7);
       }
     
       .carsBoo{
@@ -194,12 +190,16 @@ h2 {
         display: inline block;
         float: right;
         border-radius: 15px 50px 30px;
-        background-color: #035397;
+        background-color: rgb(3,83,151);
         animation-name: example;
         animation: example 5s infinite;
+        margin-right: 10%;
     }
       .carsBoo:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+
+        background-color: rgb(3,83,151,0.7);
+
       }
       .Class2 {
         padding: 25px 16px;
@@ -213,12 +213,7 @@ h2 {
       }
       
       
-      @keyframes blinker {
-        50% {
-            font-family: 'Oswald', sans-serif;
-        }
-      
-      } 
+ 
   
   footer input{
     width: 5%;
@@ -247,3 +242,10 @@ h2 {
 }
   
 
+.kkk{
+  width: 70%;
+  font-size: 150%;
+}
+div p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
