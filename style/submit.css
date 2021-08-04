@@ -99,14 +99,18 @@ h1#cartText{
     margin-top: 3%;
     font-size: 20px;
     font-weight: 900;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lobster', cursive;   
+
 }
 
 li.liCart{
     text-align: center;
     margin-bottom: 1%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     color:black;
+    text-shadow: 0px 0px 1.2px blue;
+    color:black;
+
 
   }
 
@@ -149,7 +153,9 @@ nav{
 }
 h2{
     font-size: 150%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+
+
 }
 nav ul li {
     display: inline-block;
@@ -169,8 +175,7 @@ margin-top: -1%;
 vertical-align: text-top; 
 background-color: #035397;
 height: 110px;
-margin-left: -1%;
-margin-right: -1%;
+
 height: 130px;
 }
 li a {
@@ -188,8 +193,10 @@ li a {
       background-color: #D8E3E7;
       border-radius: 15px 50px 30px;
       padding: 9px 15px;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+      text-shadow: 0px 0px 1.2px blue;
+      color:black;
+      font-family: 'Lobster', cursive;   
+      }
   ul {
     padding-left: 9%;
       position: sticky;
@@ -214,3 +221,4 @@ body{
   background-color: whitesmoke;
 
 }
+
