@@ -171,7 +171,7 @@ h2 {
         background-color: #035397;
         animation-name: example;
         animation: example 5s infinite;
-        margin-left: 10%;
+        margin-left: 8%;
 
 
     }
@@ -199,7 +199,7 @@ h2 {
         background-color: rgb(3,83,151);
         animation-name: example;
         animation: example 5s infinite;
-        margin-right: 10%;
+        margin-right: 8%;
     }
       .carsBoo:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
