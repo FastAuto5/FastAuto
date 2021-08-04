@@ -38,6 +38,12 @@ ul{
     margin-bottom: 20%;
   }
 
+
+  p{
+    text-shadow: 0px 0.3px 0.8px blue;
+    text-align: justify;
+  }
+
 header  {
     margin-top: -1%;
     vertical-align: text-top; 
@@ -80,7 +86,7 @@ header  {
     background-position: center;
     border-right: none; 
     margin-top: -7%;
-    width: 70%;
+    /* width: 70%; */
            
           } 
 

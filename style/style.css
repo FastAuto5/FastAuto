@@ -14,6 +14,12 @@ font-size: 200%;
 font-weight: bolder;
 }
 
+p{
+
+
+  text-align: justify;
+}
+
 nav{
   margin-top: -6%;
   padding-bottom: 20%;
@@ -85,7 +91,7 @@ li a {
     background-position: center;
     border-right: none; 
     margin-top: -7%;
-    width: 70%;
+    /* width: 70%; */
   
 
   } 

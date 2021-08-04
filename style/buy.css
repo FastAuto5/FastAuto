@@ -250,6 +250,7 @@ font-family: 'Lobster', cursive;
     font-size:120%;
     text-align: center;
     justify-content: center;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%);
     
 }
 #cars{
