@@ -102,7 +102,6 @@ function Car(model, year, price, src, text) {
 
 }
 
-
 let filtermodels = [];
 let filterCar = [];
 let filteryears = [];
@@ -119,13 +118,9 @@ function InputCar(model, year, price) {
 
 }
 
-
 function carInstances() {
 
-
-
   new Car('Ford GT Liquid Silver ', '2019', '35000', 'img/Ford GT Liquid Silver  2017 3.jpg', 'The Ford GT began life as a concept car designed in anticipation of the automaker\'s centennial year and as part of its drive to showcase and revive its  names such as Mustang and Thunderbird. At the 2002 North American International Auto Show,[3] Ford unveiled a new GT40 Concept car. Camilo Pardo, the then head of Ford\' studio, is credited as the chief designer of the GT and worked under the guidance of J Mays. Carroll Shelby, the original designer of the Shelby GT 500, was brought in by Ford to help develop the GT; which included performance testing of the prototype car. While under development, the project was called Petunia.This is what true innovation looks like. From its 3.5L EcoBoost  technology to its ultra-efficient aerodynamics, the Ford GT is the culmination of everything great we do at Ford. And it’s the same passion for innovation that can be seen throughout our entire vehicle lineup.');
-
   new Car('Ford Mustang blue ', '2018', '20000', 'img/Ford Mustang blue 2015 4.jpg', 'The world’s best-selling sports coupe is back and better than ever. Ford has unveiled the all-new 2018 Ford Mustang, which is the most advanced Mustang ever thanks to a comprehensive suite of advanced new technology, safety and convenience features. The 2018 Mustang also features improved performance over the 2017 Mustang thanks to powerful engine upgrades and the all-new available 10-speed automatic transmission. And you’ll be able to easily handle all that additional power with the available MagneRide suspension, which improves all aspects of the 2018 Mustang’s handling abilities. So let’s get right down to business and take a closer look at the all-new Mustang, including its release date.');
   new Car('Ford Expedition White ', '2021', '30000', 'img/Ford Expedition White 2021.jpg', 'Power, style and plenty of space for passengers and cargo give the 2021 Ford Expedition its swagger and imposing presence on the road. Equipped with the available Heavy-Duty Trailer Tow Package.* Add to that an available premium B&O Sound System by Bang and Olufsen, available heated and ventilated seating and plenty of tech to keep you confident and connected on the road. The 2021 Expedition also features the legendary King Ranch®️ trim, as well as the attention-grabbing Stealth Edition, Texas Edition and available FX4 Off-Road Package. It’s the one and only Ford Expedition and it’s Built Ford Proud.');
   new Car('Ford Edge Red', '2020', '50000', 'img/Ford Edge Red 2020.jpg', 'The Ford Edge was a mid-size crossover that offered seating for five. Easy to drive and easy to manoeuvre around town and also available with powerful engine, it was a great fit for families. An extensive list of the latest technologies was available depending on the trim level. The trim levels available with the 2018 Edge were the SE, the SEL, Titanium and Sport.');
@@ -149,7 +144,7 @@ function carInstances() {
   new Car('RangeRover Sport Red ', ' 2020', '6901', 'img/RangeRover Sport Red 2015 4.jpg', 'A range of potent powertrains deliver breathtaking on-road performance. The 5.0 litre V8 Supercharged Petrol The Land Rover Range Rover Sport, generally known simply as the Range Rover Sport, is a mid-size luxury SUV produced under their Land Rover marque, from the British manufacturer Land Rover, and later Jaguar Land Rover. The first generation (codename: L320) started production in 2005, and was replaced by the second generation Sport (codename: L494) in 2013. Engine offers an improved output of 525PS and the combination of an advanced Ingenium petrol engine and electric motor delivers the remarkable performance of Range Rover Sport PHEV.                                          With sportier design cues and a powerful, muscular stance, Range Rover Sport is designed for impact. Cleaner, more dynamic, there’s a contemporary feel everywhere you look—from the Range Rover Sport grille, redesigned bonnet vents to the refined, yet sporty wheel options.');
   new Car('MG Cyberster Red', '2021', '58295', 'img/MG Cyberster Red 2021.jpg', 'The Cyberster - developed by the team at the MG Advanced Design Centre in London – is a two-door, two-seater sports car, drawing a number of styling cues from the classic MGB Roadster while also ushering in new high-tech features, including an interactive gaming cockpit and 5G connectivity. The Cyberster’s intelligent all-electric architecture will enable an approximate EV range of 800km (500 miles) and deliver a 0-100km/h time (0-62mph) of less than three seconds, while the body is designed to enhance aerodynamic performance. The classically shaped MG grille also serves as an air duct to ensure airflow over the car’s chassis.');
   new Car('Toyota Supra Yellow', '2020', '17590', 'img/Toyota Supra Yellow 2020.webp', 'The Toyota Supra (Japanese: トヨタ・スープラ, Toyota Sūpura) is a sports car and grand tourer manufactured by Toyota Motor Corporation beginning in 1978. The initial four generations of the Supra were produced from 1978 to 2002. ... The fifth generation has been produced since March 2019 and went on sale in May 2019.');
-  new Car('Chevy Corvette Green', '2019', '35085', 'img/Chevy Corvette green 2019.jpg', 'The Chevrolet Corvette is the eighth generation of the Corvette sports car manufactured by American automobile manufacturer Chevrolet. Following several experimental CERV prototype vehicles, it is the first mid-engine Corvette since the model\'s introduction in 1953 (as well as GM\'s first production mid-engine sports car since the Pontiac Fiero was discontinued in 1988), differing from the traditional front-engine design. It was announced in April 2019, and the coupe made its official debut on July 18, 2019 during a media event at the Kennedy Space Center (referencing its association with NASA) to coincide with the 50th anniversary of the Apollo 11 mission. The convertible made its debut in October 2019 alongside the racing version, the  Production officially began on February 3, 2020, delayed by the 2019 General Motors strike.');
+  new Car('Chevy Corvette Green', '2019', '35085', 'img/corvette.jpg', 'The Chevrolet Corvette is the eighth generation of the Corvette sports car manufactured by American automobile manufacturer Chevrolet. Following several experimental CERV prototype vehicles, it is the first mid-engine Corvette since the model\'s introduction in 1953 (as well as GM\'s first production mid-engine sports car since the Pontiac Fiero was discontinued in 1988), differing from the traditional front-engine design. It was announced in April 2019, and the coupe made its official debut on July 18, 2019 during a media event at the Kennedy Space Center (referencing its association with NASA) to coincide with the 50th anniversary of the Apollo 11 mission. The convertible made its debut in October 2019 alongside the racing version, the  Production officially began on February 3, 2020, delayed by the 2019 General Motors strike.');
   new Car('Mercedes-AMG GT Orange', '2021', '325000', 'img/Mercedes-AMG GT Orange 2021.jpg', 'The Mercedes-AMG GT model lineup is pretty straightforward, with the entry-level versions available in either Coupe or open-top Roadster forms. You can also upgrade to the Night Edition variants which offer plenty of moody black trim and various cosmetic tweaks.                                        All the AMG GT models share versions of the same 4.0-litre twin-turbo V8 that now appears elsewhere in the AMG line-up. The motor is mounted ahead of the driver, but set well-back, in what Mercedes describes as a front-mid engine configuration. Drive is directed to the rear wheels through a paddle-shifted seven-speed dual-clutch automated gearbox, and there’s no manually shifted option.');
 
 
@@ -215,10 +210,6 @@ function userClick(event) {
   // function viewMore(){
 
   //   let divshow=document.getElementById('showall');
-
-
-
-
 
   //   let imgages2=document.createElement('img');
   //   divshow.appendChild(imgages2);
@@ -317,10 +308,6 @@ function render() {
     imgages.id = i;
 
 
-  
-
-
-  
 
   }
 }
@@ -599,8 +586,6 @@ function getInfo(){
      
     }
 
-
-   
     // new Car(parsedArr);
     console.log('yousef',parsedArr);
     console.log('issa',cars);
