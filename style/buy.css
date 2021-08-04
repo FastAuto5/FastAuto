@@ -141,7 +141,7 @@ fieldset{
       display: inline-block;
   }
  
-   #Chart, #showbuy ,#reset,#clearCart  {
+  #showbuy{
     width: 100%;
     background-color: #D8E3E7;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%);
@@ -151,9 +151,37 @@ fieldset{
     border: none;
     border-radius: 40px;
     cursor: pointer;
-    margin: 8px 0;
+    margin: 20px;
+    position: relative;
+    right: 20px;
+   
+
 
   }
+
+
+    #Chart ,#reset,#clearCart  {
+    width: 80%;
+    background-color: #D8E3E7;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%);
+    font-family: 'Lobster', cursive;
+    color: #00f;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 20px;
+    position: relative;
+    right: 18px;
+
+  }
+
+
+  #showRent:hover,#reset:hover,#clearCart:hover,#Chart:hover, #showbuy:hover{
+    background-color: rgb(30, 207, 238);
+    transition-duration: 350ms;
+    color:black;
+}
 
 
 
