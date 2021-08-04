@@ -265,6 +265,9 @@ ul{
      padding: 9px 15px;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      margin-top: 15%;
+     text-shadow: 0px 0px 1.2px blue;
+     color:black;
+     font-family: 'Lobster', cursive;   
    }
    
   .ulol:hover {
