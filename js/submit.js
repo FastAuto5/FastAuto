@@ -5,7 +5,7 @@ let Cart = function (items) {
     this.items = items;
 };
 
-let tPrice=[];
+let tPrice = [];
 
 let form = document.getElementById('submitForm');
 
@@ -13,6 +13,8 @@ let form = document.getElementById('submitForm');
 let table = document.getElementById('cart');
 console.log(table);
 let cart;
+
+
 
 let data = localStorage.getItem('rentcar');
 let globParArr = JSON.parse(data);
@@ -46,7 +48,7 @@ let temp = 0;
 let tempArray = [];
 
 
-
+let totallllllls = 0;
 
 function showCart() {
 
@@ -60,6 +62,7 @@ function showCart() {
     let data = localStorage.getItem('rentcar');
     let parsedArr = JSON.parse(data);
     console.log(parsedArr);
+    let totalPrice = 0;
     for (let i = 0; i < parsedArr.length; i++) {
         let tRow = document.createElement('tr');
         tbody.appendChild(tRow);
@@ -93,38 +96,68 @@ function showCart() {
         dayField.setAttribute('type', 'number');
         dayField.setAttribute('name', `name${i}`);
         dayField.setAttribute('value', '1');
-        dayField.id= `input${i}`;
+        dayField.id = `input${i}`;
         // dayField.className = "quantity";
 
 
         let quantityField = dayField.value;
         dayField.onchange = function () {
+            totalPrice = 0
             quantityField = dayField.value;
             // console.log('hello');
+            // totalPrice=0
             if (isNaN(dayField.value) || dayField.value <= 0) {
                 dayField.value = 1;
                 quantityField = 1;
+            } else {
+
+                carPrice = quantityField * globParArr[i].price;
+                document.getElementsByClassName('priceTd')[i].textContent = carPrice;
+
+                let totals = document.getElementsByClassName('priceTd')
+
+                console.log('befooooore', totalPrice);
+
+                for (let index = 0; index < totals.length; index++) {
+                    console.log(totals[index].textContent);
+
+
+                    totalPrice += parseInt(totals[index].textContent);
+
+
+
+                    console.log(totalPrice);
+                }
+
+
+                console.log('inside onchange', document.getElementsByClassName('priceTd')[i].textContent);
+                console.log('totallll', totalPrice);
+                total(totalPrice);
+                // totallllllls = totalPrice;
+
+                // totalPrice = totalPrice + carPrice;
+                // globTotalPric = totalPrice;
+                // console.log(totalPrice);
+                // temp = dayField.value;
+                // console.log(tPrice.id);
+                // globTotalPric.push(tPrice.textContent);
+                // console.log(globTotalPric);
             }
-            let totalPrice = 0;
-            carPrice = quantityField * globParArr[i].price;
-            tPrice.textContent = carPrice;
-            totalPrice = totalPrice + carPrice;
-            // globTotalPric = totalPrice;
-            // console.log(totalPrice);
-            temp = dayField.value;
-            // console.log(tPrice.id);
-            globTotalPric.push(tPrice.textContent);
-            // console.log(globTotalPric);
         };
 
 
         carPrice = quantityField * globParArr[i].price;
         tPrice = document.createElement('td');
+        tPrice.className = 'priceTd';
         tRow.appendChild(tPrice);
         tPrice.textContent = carPrice;
         tPrice.id = i;
-       
-// console.log(tPrice);
+
+        // console.log(tPrice);
+
+        totalPrice += parseInt(document.getElementsByClassName('priceTd')[i].textContent);
+        console.log(totalPrice);
+
 
         // dayField.setAttribute('onchange',"changable()");
 
@@ -147,6 +180,14 @@ function showCart() {
         // form.addEventListener('submit', confirmClick);
 
     }
+    let totalDataPrice = document.getElementById('totaaaaaaaaaaaaaaaaaaal');
+    function total(total) {
+
+
+        // totalRow.appendChild(totalDataPrice);
+        totalDataPrice.textContent = total;
+    }
+    total(totalPrice);
 
 }
 
@@ -213,11 +254,15 @@ function click(event) {
         table.textContent = "";
         tableText.textContent = "";
         upperText.textContent = "";
+        localStorage.clear();
 
         for (let i = 0; i < globParArr.length; i++) {
 
             let secText = document.createElement('p');
             textDiv.appendChild(secText);
+            secText.style.fontFamily = "sans-serif";
+            secText.style.textAlign = "center";
+            secText.style.marginTop = "3%"
             secText.textContent = `Thanks ${nameInput}. Your ${globParArr[i].model} will be delvired at ${locationInput} after 3 days. The total cost will be ${globTotalPric} fot this car.`;
 
         }
@@ -228,6 +273,9 @@ function click(event) {
         let thankText = document.createElement('p');
         textDiv.appendChild(thankText);
         console.log('hi');
+        thankText.style.fontFamily = "sans-serif";
+        thankText.style.textAlign = "center";
+        thankText.style.marginTop = "3%"
         thankText.textContent = "Please add your name and location";
     }
 
