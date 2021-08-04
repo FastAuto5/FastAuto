@@ -149,7 +149,7 @@ function carInstances() {
   new Car('RangeRover Sport Red ', ' 2020', '6,901', 'img/RangeRover Sport Red 2015 4.jpg', 'A range of potent powertrains deliver breathtaking on-road performance. The 5.0 litre V8 Supercharged Petrol The Land Rover Range Rover Sport, generally known simply as the Range Rover Sport, is a mid-size luxury SUV produced under their Land Rover marque, from the British manufacturer Land Rover, and later Jaguar Land Rover. The first generation (codename: L320) started production in 2005, and was replaced by the second generation Sport (codename: L494) in 2013. Engine offers an improved output of 525PS and the combination of an advanced Ingenium petrol engine and electric motor delivers the remarkable performance of Range Rover Sport PHEV.                                          With sportier design cues and a powerful, muscular stance, Range Rover Sport is designed for impact. Cleaner, more dynamic, there’s a contemporary feel everywhere you look—from the Range Rover Sport grille, redesigned bonnet vents to the refined, yet sporty wheel options.');
   new Car('MG Cyberster Red', '2021', '58,295', 'img/MG Cyberster Red 2021.jpg', 'The Cyberster - developed by the team at the MG Advanced Design Centre in London – is a two-door, two-seater sports car, drawing a number of styling cues from the classic MGB Roadster while also ushering in new high-tech features, including an interactive gaming cockpit and 5G connectivity. The Cyberster’s intelligent all-electric architecture will enable an approximate EV range of 800km (500 miles) and deliver a 0-100km/h time (0-62mph) of less than three seconds, while the body is designed to enhance aerodynamic performance. The classically shaped MG grille also serves as an air duct to ensure airflow over the car’s chassis.');
   new Car('Toyota Supra Yellow', '2020', '17,590', 'img/Toyota Supra Yellow 2020.webp', 'The Toyota Supra (Japanese: トヨタ・スープラ, Toyota Sūpura) is a sports car and grand tourer manufactured by Toyota Motor Corporation beginning in 1978. The initial four generations of the Supra were produced from 1978 to 2002. ... The fifth generation has been produced since March 2019 and went on sale in May 2019.');
-  new Car('Chevy Corvette Green', '2019', '35,085', 'img/Chevy Corvette Green 2019.jpg', 'The Chevrolet Corvette is the eighth generation of the Corvette sports car manufactured by American automobile manufacturer Chevrolet. Following several experimental CERV prototype vehicles, it is the first mid-engine Corvette since the model\'s introduction in 1953 (as well as GM\'s first production mid-engine sports car since the Pontiac Fiero was discontinued in 1988), differing from the traditional front-engine design. It was announced in April 2019, and the coupe made its official debut on July 18, 2019 during a media event at the Kennedy Space Center (referencing its association with NASA) to coincide with the 50th anniversary of the Apollo 11 mission. The convertible made its debut in October 2019 alongside the racing version, the  Production officially began on February 3, 2020, delayed by the 2019 General Motors strike.');
+  new Car('Chevy Corvette Green', '2019', '35,085', 'img/Chevy Corvette green 2019.jpg', 'The Chevrolet Corvette is the eighth generation of the Corvette sports car manufactured by American automobile manufacturer Chevrolet. Following several experimental CERV prototype vehicles, it is the first mid-engine Corvette since the model\'s introduction in 1953 (as well as GM\'s first production mid-engine sports car since the Pontiac Fiero was discontinued in 1988), differing from the traditional front-engine design. It was announced in April 2019, and the coupe made its official debut on July 18, 2019 during a media event at the Kennedy Space Center (referencing its association with NASA) to coincide with the 50th anniversary of the Apollo 11 mission. The convertible made its debut in October 2019 alongside the racing version, the  Production officially began on February 3, 2020, delayed by the 2019 General Motors strike.');
   new Car('Mercedes-AMG GT Orange', '2021', '325,000', 'img/Mercedes-AMG GT Orange 2021.jpg', 'The Mercedes-AMG GT model lineup is pretty straightforward, with the entry-level versions available in either Coupe or open-top Roadster forms. You can also upgrade to the Night Edition variants which offer plenty of moody black trim and various cosmetic tweaks.                                        All the AMG GT models share versions of the same 4.0-litre twin-turbo V8 that now appears elsewhere in the AMG line-up. The motor is mounted ahead of the driver, but set well-back, in what Mercedes describes as a front-mid engine configuration. Drive is directed to the rear wheels through a paddle-shifted seven-speed dual-clutch automated gearbox, and there’s no manually shifted option.');
 
 
@@ -187,6 +187,7 @@ function userClick(event) {
   // divShow.addEventListener('click', userClick);
 
   ulImg = document.createElement('ul');
+  ulImg.className='classimg';
 
   divShow.appendChild(ulImg);
 
@@ -205,7 +206,9 @@ function userClick(event) {
   imgages.className = 'styleimg';
   let divtext = document.createElement('div');
   divShow.appendChild(divtext);
+  divtext.className='divtext';
   let describtion = document.createElement('p');
+  describtion.className='phar';
   divtext.appendChild(describtion);
 
   // eslint-disable-next-line no-inner-declarations
@@ -240,7 +243,7 @@ function userClick(event) {
 
   describtion.textContent = ` ${cars[i].text}`;
 
-  imgages.setAttribute('width', 300);
+  imgages.setAttribute('width', 700);
   imgages.id = 'car' + i;
   let divbtn = document.getElementById('showall');
   let buyBtn = document.createElement('button');
@@ -289,11 +292,14 @@ function render() {
     divShow.addEventListener('click', userClick);
 
     ulImg = document.createElement('ul');
+    ulImg.className='firstul';
 
     divShow.appendChild(ulImg);
 
     liImg = document.createElement('li');
+    // liInfo.className='firstLi';
     liInfo = document.createElement('li');
+    liInfo.className='firstLi';
 
     ulImg.appendChild(liImg);
     ulImg.appendChild(liInfo);
@@ -307,7 +313,7 @@ function render() {
     imgages.src = cars[i].src;
     imgages.className = 'styleimg';
 
-    imgages.setAttribute('width', 300);
+    imgages.setAttribute('width', 450);
     imgages.id = i;
 
 
@@ -385,8 +391,11 @@ function search(event) {
   divShow.textContent = ' ';
 
   let ulElemnt = document.createElement('ul');
+  ulElemnt.className='secondul';
   divShow.appendChild(ulElemnt);
   // ulElemnt.textContent='';
+  // divShow.className='secondul';
+
 
 
 
@@ -401,9 +410,9 @@ function search(event) {
       // console.log(cars[i].model);
 
       let liElement = document.createElement('li');
-      ulElemnt.appendChild(liElement);
       let imgElemnt = document.createElement('img');
       ulElemnt.appendChild(imgElemnt);
+      ulElemnt.appendChild(liElement);
       imgElemnt.setAttribute('src', cars[i].src);
       imgElemnt.setAttribute('width', '500');
       liElement.textContent = ` ${cars[i].model} ${cars[i].year} {${cars[i].price}$} PerDay`;
@@ -413,8 +422,9 @@ function search(event) {
       let divtext = document.createElement('div');
       divShow.appendChild(divtext);
       let describtion = document.createElement('p');
+      describtion.className='phar';
       divtext.appendChild(describtion);
-
+      imgElemnt.className='styleimg';
 
       describtion.textContent = ` ${cars[i].text}`;
       flag = false;
