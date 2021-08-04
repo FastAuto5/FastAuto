@@ -202,7 +202,7 @@ overflow: hidden;
 background-position: center;
 border-right: none; 
 margin-top: -7%;
-width: 70%;
+/* width: 70%; */
 } 
 a:hover {
   z-index: -1;

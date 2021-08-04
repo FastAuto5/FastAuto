@@ -243,7 +243,7 @@ function userClick(event) {
 
   describtion.textContent = ` ${cars[i].text}`;
 
-  imgages.setAttribute('width', 700);
+  imgages.setAttribute('width', 500);
   imgages.id = 'car' + i;
   let divbtn = document.getElementById('showall');
   let buyBtn = document.createElement('button');
