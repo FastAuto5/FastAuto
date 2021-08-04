@@ -17,20 +17,35 @@
 <body>
     
 
-<header>
-
-</header>
+    <header class="headerujmhn">
+        
+            <img src="image 2/LOGO BLUE.png" class="logo"/>
+            <nav class="gbvfbf">
+                <ul class="jhgfd">
+                    <li class="navulli"> <a href="index.html" class="ulol">Home</a> </li>
+                    <li class="navulli"> <a href="buy.html"class="ulol">Buy Car</a> </li>
+                    <li class="navulli"> <a href="rent.html"class="ulol">Rent Car</a> </li>
+                    <li class="navulli" > <a href="sell.html"class="ulol">Input</a ></li>
+                    <li class="navulli"> <a href="submit.html"class="ulol">Cart</a> </li>
+                    <li class="navulli"> <a href="aboutus.html"class="ulol">About Us</a> </li>
+                </ul>
+            </nav>
+       
+    </header>
 
 <main>
 
-    <h1>Real Life Experiences  </h1>
+
+    <h1 id="firstheading">real life experiences  </h1>
+    <h2>tell us about your experience! </h2>
+
 
    <form id="inputstory">
        <fieldset>
            <label for="nameinputid">Enter your Name</label>
             <input type="text" name="nameinput" id="nameinputid">
             <!-- nameinput sexname ownname storyname imgname ratename-->
-            
+            <br>
             <label for="sexid">i am </label>
             <select name="sexname" id="sexid">
                 <option value="male">Male</option>
@@ -49,16 +64,16 @@
             <label for="imgid">show us a picture of your car</label>
             <input type="text" name="imgname" id="imgid"> 
             <br>
-            <label for="rateid">rate your experience with this car from</label>
+            <label for="rateid">rate your experience with this car </label>
             <input type="range" name="ratename" id="rateid">
             <br>
-            <input type="submit" value="upload your experience">
+            <input type="submit" value="upload your experience" id="submitid">
        </fieldset>
    </form>
 
    <div id="prevreviews" class="prereviewsclass"> 
     <!-- add border to this -->
-       <h1>other users reviews</h1>
+       <h1 id="userreviewsid">User's reviews</h1>
     <!-- <ul id="prevreviews">
        
     </ul> -->
@@ -66,7 +81,27 @@
 
 </main>
  
-<footer>
+
+<footer class="footer">
+    <center id="kl">
+    <br>
+    <form action="https://github.com/FastAuto5/FastAuto" class="g">
+        <input type="image" src="image 2/github logo.png" class="footer-input">
+    </form>
+    <form action="https://www.instagram.com/"class="g">
+        <input type="image" src="image 2/insta logo.png" class="footer-input">
+    </form>
+    <form action="https://www.linkedin.com/home"class="g">
+        <input type="image" src="image 2/linkedin logo.jpg"class="footer-input" >
+    </form>
+    <br>
+   <p class="pra"> Fast Auto 5 © 2021</p>
+  </center>
+  </footer>
+
+<div id="print">  </div>
+ 
+
    <script src="js/story.js"></script>
 </footer>
 </body>
