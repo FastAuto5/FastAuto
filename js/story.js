@@ -23,6 +23,7 @@ Review.prototype.allreviews = [];
 Review.prototype.renderstories = function () {          //it creates the p m section element
     let rendersection=document.createElement('section');
     prevreviewselement.appendChild(rendersection);
+    rendersection.className="rendersectionclass"
 
     renderpar1 = document.createElement('p');           
     rendersection.appendChild(renderpar1);
@@ -34,15 +35,20 @@ Review.prototype.renderstories = function () {          //it creates the p m sec
     rendersection.appendChild(renderpar4);
     renderpar5 = document.createElement('p');
     rendersection.appendChild(renderpar5);
-    renderpar6 = document.createElement('p');
-    rendersection.appendChild(renderpar6);
+    // renderpar6 = document.createElement('p');
+    // rendersection.appendChild(renderpar6);
     
 
     renderimage = document.createElement('img');
     rendersection.appendChild(renderimage);
     
     renderimage.className="imagesclass";
-    renderpar1,renderpar2,renderpar3,renderpar4,renderpar5,renderpar6.className="renderparclass";
+    renderpar1.className="renderparclass";
+    renderpar2.className="renderparclass";
+    renderpar3.className="renderparclass";
+    renderpar4.className="renderparclass";
+    renderpar5.className="renderparclass";
+    // renderpar6.className="renderparclass";
 
     
     renderimage.src = this.img;
@@ -60,7 +66,6 @@ Review.prototype.renderstories = function () {          //it creates the p m sec
     //     My thoughts about this Car : ${this.story} 
     //     how would you rate your experience with this car :  ${this.rate} `;
 
-    console.log(renderpar);
     updateStorage();
 
 }
@@ -130,26 +135,31 @@ function load() {
             rendersection.appendChild(renderpar24);
             renderpar25 = document.createElement('p');
             rendersection.appendChild(renderpar25);
-            renderpar26 = document.createElement('p');
-            rendersection.appendChild(renderpar26);
+            // renderpar26 = document.createElement('p');
+            // rendersection.appendChild(renderpar26);
 
             renderimage2 = document.createElement('img');
             rendersection.appendChild(renderimage2);
-            
+            console.log(renderimage2);
+            renderimage2.src=Review.prototype.allreviews[index].img;
             renderimage2.className="imagesclass";
-            renderpar1,renderpar2,renderpar3,renderpar4,renderpar5,renderpar6.className="renderparclass";
+            renderpar21.className="renderparclass";
+            renderpar22.className="renderparclass";
+            renderpar23.className="renderparclass";
+            renderpar24.className="renderparclass";
+            renderpar25.className="renderparclass";
+            // renderpar26.className="renderparclass";
             // renderpar2.className="renderparclass";
 
             // rendersection.appendChild(renderpar2);
 
-            renderimage2.src=Review.prototype.allreviews[index].img;
 
         
-            renderpar21.textContent=this.name;
-            renderpar22.textContent=this.own;
-            renderpar23.textContent=this.sex;
-            renderpar24.textContent=this.story;
-            renderpar25.textContent=this.rate;
+            renderpar21.textContent= Review.prototype.allreviews[index].name;
+            renderpar22.textContent= Review.prototype.allreviews[index].own;
+            renderpar23.textContent= Review.prototype.allreviews[index].sex;
+            renderpar24.textContent= Review.prototype.allreviews[index].story;
+            renderpar25.textContent= ` i would rate it as ${Review.prototype.allreviews[index].rate}/100`;
 
         //     renderpar2.textContent =
         //         `Name : ${Review.prototype.allreviews[index].name}  
@@ -162,4 +172,5 @@ function load() {
 }
 console.log(load());
 load();
+
 console.log(localstoragedata);
