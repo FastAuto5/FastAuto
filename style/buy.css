@@ -10,23 +10,23 @@
   margin-bottom: 20%;
   }
   .navulli {
-  float: left;
-  margin-left: 9%;
-  padding: -10%; 
-  display: inline;
+    float: left;
+    margin-left: 4%;
+    padding-left: 0%; 
+    display: inline;
   } 
   .jhgfd{
-  padding-bottom: 20%;
-  margin-bottom: 20%;
-  padding-left: 9%;
-  position: sticky;
-  top: 0%;
-  margin-bottom: 13%;
-  padding-left: 8%;
-  overflow: hidden;
-  background-position: center;
-  border-right: none; 
-  margin-top: -7%;
+    padding-bottom: 0%;
+    /* margin-bottom: 20%; */
+    padding-left: 9%;
+    position: sticky;
+    top: 0%;
+    margin-bottom: 2%;
+    padding-left: 50%;
+    overflow: hidden;
+    background-position: center;
+    border-right: none; 
+    margin-top: -7%;
   }
   .headerujmhn  {
   margin-top: -1%;
@@ -40,28 +40,28 @@
 
   }
   .jhgfd{
-    font-family: 'Lobster', cursive;   
+    /* font-family: 'Lobster', cursive;    */
 
   }
   .ulol{
-  color: blue;
-  text-align: center;
-  text-decoration: none;
-  margin-top: 0%;
-  padding-top: 2%;
-  margin-bottom: 0%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-     transition: 1s;
-     width: 150%;
-     float: right;
-     background-color: #D8E3E7;
-     border-radius: 15px 50px 30px;
-     padding: 9px 15px;
-     font-family: 'Lobster', cursive;   
-     margin-top: 15%;
-     
-     text-shadow: 0px 0px 1.2px blue;
-     color:black;
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 0%;
+    padding-top: 2%;
+    margin-bottom: 0%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+        transition: 1s;
+        width: 150%;
+        display: inline block;
+        float: right;
+        background-color: #D8E3E7;
+        border-radius: 15px 50px 30px;
+        padding: 9px 15px;
+        text-shadow: 0px 0px 1.2px blue;
+        color:black;
+        /* font-family: 'Lobster', cursive;    */
+        width: 80%; 
    }
   .ulol:hover {
    z-index: -1;
@@ -179,6 +179,21 @@ fieldset{
         /* list-style-type: none; */
         margin-top: 0%;
         font-family: 'Lobster', cursive;
+        margin: 6%;
+        padding-right: 2%;
+        padding-left: 2%;
+    
+    
+        text-align: center;
+        text-decoration: none;
+        margin-top: 0%;
+        padding-top: 2%;
+        margin-bottom: 0%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+        border-radius: 15px 50px 30px;
+       padding: 9px 15px;
+       font-family: 'Lobster', cursive;
+       background-color: rgba(243, 236, 236, 0.541);
 
 
   } 
@@ -248,4 +263,10 @@ hr{
 
 center{
     margin-bottom: 0%;
+}
+
+.phar{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
 }
